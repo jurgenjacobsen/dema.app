@@ -12,7 +12,7 @@ require('update-electron-app')({
 
 function createWindow() {
   const win = new BrowserWindow({
-    minWidth: 800,
+    minWidth: 1000,
     minHeight: 600,
     frame: false,
     autoHideMenuBar: true,
@@ -27,7 +27,7 @@ function createWindow() {
     }
   });
 
-  win.loadURL('http://localhost');
+  win.loadURL('https://dema.city');
   win.setMenuBarVisibility(false);
 
   const clientId = '831653654426550293';
@@ -35,10 +35,6 @@ function createWindow() {
 
   rpc.on('ready', () => {
     activity();
-
-    setTimeout(() => {
-      notify('Title', 'body')
-    }, 10 * 1000);
   });
 
   rpc.login({ clientId }).catch(console.error);
