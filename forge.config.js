@@ -21,7 +21,6 @@ module.exports = {
     {
       name: "@electron-forge/maker-squirrel",
       config: {
-        iconUrl: join(__dirname, 'src/images/icon.ico'),
         setupIcon: join(__dirname, 'src/images/icon.ico'),
         setupExe: 'DemaInstaller.exe',
       }
