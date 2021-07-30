@@ -1,0 +1,37 @@
+{
+  "name": "dema.app",
+  "version": "0.0.1",
+  "description": "An electron app to use dema.city",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jurgenjacobsen/dema.app.git"
+  },
+  "author": "jurgenjacobsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jurgenjacobsen/dema.app/issues"
+  },
+  "homepage": "https://github.com/jurgenjacobsen/dema.app#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.59",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.59",
+    "@electron-forge/maker-zip": "^6.0.0-beta.59",
+    "@electron-forge/publisher-github": "^6.0.0-beta.59",
+    "electron": "^13.1.7"
+  },
+  "dependencies": {
+    "custom-electron-titlebar": "^3.2.7",
+    "discord-rpc": "^4.0.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "path": "^0.12.7",
+    "update-electron-app": "^2.0.1"
+  },
+  "config": {
+    "forge": "./forge.config.js"
+  }
+}
