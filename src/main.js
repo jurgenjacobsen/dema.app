@@ -6,7 +6,7 @@ if (require('electron-squirrel-startup')) return app.quit();
 
 require('update-electron-app')({
   repo: 'jurgenjacobsen/dema.app',
-  updateInterval: '10 minutes',
+  updateInterval: '5 minutes',
   notifyUser: true,
 });
 
@@ -55,7 +55,6 @@ function createWindow() {
     });
   }
 };
-
 
 app.on('ready', () => {
   createWindow();
