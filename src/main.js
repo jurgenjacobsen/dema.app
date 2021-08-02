@@ -4,12 +4,6 @@ const DiscordRPC = require('discord-rpc');
 
 if (require('electron-squirrel-startup')) return app.quit();
 
-require('update-electron-app')({
-  repo: 'jurgenjacobsen/dema.app',
-  updateInterval: '5 minutes',
-  notifyUser: true,
-});
-
 function createWindow() {
   const win = new BrowserWindow({
     minWidth: 1000,
@@ -58,6 +52,8 @@ function createWindow() {
 
 app.on('ready', () => {
   createWindow();
+
+  
 });
 
 app.on('window-all-closed', () => {
@@ -70,6 +66,10 @@ app.on('activate', () => {
   if (BrowserWindow.getAllWindows().length === 0) {
     createWindow();
   }
+});
+
+require('update-electron-app')({
+  updateInterval: '5 minutes',
 });
 
 function notify(title, body) {
