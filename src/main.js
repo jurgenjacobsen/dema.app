@@ -51,9 +51,7 @@ function createWindow() {
 };
 
 app.on('ready', () => {
-  createWindow();
-
-  
+  createWindow(); 
 });
 
 app.on('window-all-closed', () => {
@@ -70,6 +68,7 @@ app.on('activate', () => {
 
 require('update-electron-app')({
   updateInterval: '5 minutes',
+  logger: require('electron-log')
 });
 
 function notify(title, body) {
