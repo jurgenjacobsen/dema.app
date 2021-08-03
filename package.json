@@ -1,6 +1,6 @@
 {
   "name": "dema.app",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "An electron app to use dema.city",
   "main": "src/main.js",
   "scripts": {

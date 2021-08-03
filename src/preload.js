@@ -3,7 +3,7 @@ const { Color, Titlebar, RGBA } = require('custom-electron-titlebar');
 window.addEventListener('DOMContentLoaded', () => {
   const titlebar = new Titlebar({
     backgroundColor: new Color(new RGBA(0, 0, 0, 0)),
-    titleHorizontalAlignment: 'left',
+    titleHorizontalAlignment: 'center',
     menu: null,
   });
 
