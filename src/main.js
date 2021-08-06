@@ -37,7 +37,7 @@ function createWindow() {
     rpc.setActivity({
       details: 'dema.city',
       startTimestamp: new Date(),
-      largeImageKey: 'demadark',
+      largeImageKey: 'demacity',
       largeImageText: 'Dema',
       instance: false,
       buttons: [
