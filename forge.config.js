@@ -2,7 +2,7 @@ let { join } = require('path');
 
 module.exports = {
   packagerConfig: {
-    appBundleId: 'com.dema.app',
+    appBundleId: 'com.dema.city',
     appCopyright: 'Copyright ©️ 2021 - jurgenjacobsen',
     name: 'DemaApp',
     platforms: [
@@ -32,12 +32,12 @@ module.exports = {
       config: {
         repository: {
           owner: 'jurgenjacobsen',
-          name: 'dema-app'
+          name: 'dema.city'
         },
       }
     }
   ],
   //plugins: [ ... ],
   //hooks: { ... },
-  buildIdentifier: 'dema-app'
+  buildIdentifier: 'dema.city'
 }
