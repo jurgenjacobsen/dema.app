@@ -4,7 +4,7 @@ module.exports = {
   packagerConfig: {
     appBundleId: 'com.dema.city',
     appCopyright: 'Copyright ©️ 2021 - jurgenjacobsen',
-    name: 'DemaApp',
+    name: 'Dema City',
     platforms: [
       "win32",
       "linux",
