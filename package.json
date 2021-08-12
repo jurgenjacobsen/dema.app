@@ -1,6 +1,6 @@
 {
   "name": "dema.city",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Dema.city desktop app for an easer way to access it!",
   "main": "src/main.js",
   "scripts": {

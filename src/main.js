@@ -24,7 +24,7 @@ function createWindow() {
   win.loadURL('https://dema.city');
   win.setMenuBarVisibility(false);
 
-  const clientId = '831653654426550293';
+  const clientId = '845048506535378946';
   const rpc = new DiscordRPC.Client({ transport: 'ipc' });
 
   rpc.on('ready', () => {
@@ -38,14 +38,14 @@ function createWindow() {
       details: 'dema.city',
       startTimestamp: new Date(),
       largeImageKey: 'demacity',
-      largeImageText: 'Dema',
+      largeImageText: 'Dema City',
       instance: false,
       buttons: [
         {
           label: 'Visitar',
           url: 'https://dema.city',
         }
-      ]
+      ],
     });
   }
 };
